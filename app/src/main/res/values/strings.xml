@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Graduate App</string>
+    <string name="loginButtonString">LOGIN</string>
+    <string name="registerButtonString">REGISTER</string>
+    <string name="usernameHintString">Username</string>
+    <string name="passwordHintString">Password</string>
+    <string name="imageCameraButtonText">Camera</string>
+    <string name="imageGalleryButtonText">Gallery</string>
+    <string name="registerNameString">Name</string>
+    <string name="registerSurnameString">Surname</string>
+    <string name="entranceYearString">Entrance Year</string>
+    <string name="graduateYearString">Graduate Year</string>
+    <string name="registerMailString">Mail</string>
+    <string name="registerPasswordString">Password</string>
+    <string name="guncelIsBilgileri">Güncel İş Bilgileri</string>
+    <string name="iletisimBilgileri">İletişim Bilgileri</string>
+    <string name="egitimDurumu">Eğitim Durumu</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="company">Company</string>
+    <string name="profileMail">Email</string>
+    <string name="profilePhone">Phone Number</string>
+    <string name="profileGuncelleButton">Güncelle</string>
+    <string name="lisansRadio">Lisans</string>
+    <string name="yuksekLisansRadio">Yüksek Lisans</string>
+    <string name="doktoraRadio">Doktora</string>
+    <string name="mezunAraButtonText">Mezun Ara</string>
+    <string name="profileButtonText">Profil</string>
+    <string name="filterMezunYili">MEZUN YILI</string>
+    <string name="filterIsim">ISIM</string>
+    <string name="duyuruBaslik">BAŞLIK</string>
+    <string name="duyuruIcerik">DUYURU İÇERİĞİ</string>
+    <string name="duyuruEkleText">DUYURU EKLE</string>
+    <string name="tarihSecText">SON TARİH</string>
+</resources>

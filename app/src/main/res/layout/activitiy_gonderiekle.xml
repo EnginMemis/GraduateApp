@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/gonderiCameraButton"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button"
+        android:text="@string/imageCameraButtonText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gonderiMedyaEkle" />
+
+    <Button
+        android:id="@+id/gonderiGalleryButton"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/button"
+        android:text="@string/imageGalleryButtonText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gonderiMedyaEkle" />
+
+    <ImageView
+        android:id="@+id/gonderiMedyaEkle"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="250dp"
+        android:maxHeight="100dp"
+        android:minWidth="250dp"
+        android:minHeight="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <EditText
+        android:id="@+id/gonderiIcerikEkle"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="56dp"
+        android:hint="ICERIK EKLE"
+        android:gravity="center"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gonderiCameraButton" />
+
+    <Button
+        android:id="@+id/gonderiEkle"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="148dp"
+        android:background="@drawable/button"
+        android:text="GONDERI EKLE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gonderiIcerikEkle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

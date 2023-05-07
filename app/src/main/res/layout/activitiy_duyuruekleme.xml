@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/gonderiCameraButton"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button"
+        android:text="@string/imageCameraButtonText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gonderiMedyaEkle" />
+
+    <Button
+        android:id="@+id/gonderiGalleryButton"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button"
+        android:text="@string/imageGalleryButtonText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gonderiMedyaEkle" />
+
+    <ImageView
+        android:id="@+id/gonderiMedyaEkle"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="250dp"
+        android:maxHeight="100dp"
+        android:minWidth="250dp"
+        android:minHeight="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <EditText
+        android:id="@+id/duyuruBaslikEkle"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="56dp"
+        android:hint="BAŞLIK"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gonderiCameraButton" />
+
+    <EditText
+        android:id="@+id/gonderiIcerikEkle"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="56dp"
+        android:hint="ICERIK"
+        android:gravity="center"
+        android:background="@drawable/custom_input"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/duyuruBaslikEkle" />
+
+    <Button
+        android:id="@+id/gonderiEkle"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="59dp"
+        android:background="@drawable/button"
+        android:text="@string/duyuruEkleText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tarihButton"
+        app:layout_constraintTop_toBottomOf="@+id/gonderiIcerikEkle" />
+
+    <TextView
+        android:id="@+id/tarihSecText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/tarihSecText"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gonderiIcerikEkle" />
+
+    <Button
+        android:id="@+id/tarihButton"
+        style="?android:spinnerStyle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="23dp"
+        android:gravity="center"
+        android:text="Button"
+        android:background="@drawable/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tarihSecText"
+        android:onClick="openDatePicker"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

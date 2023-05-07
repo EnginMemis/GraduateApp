@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/detayliPp"
+        android:layout_width="105dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="256dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/detayliCity"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="105dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/city"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detayliCountry" />
+
+    <TextView
+        android:id="@+id/detayliCompany"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="105dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/company"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/company"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detayliCity" />
+
+    <TextView
+        android:id="@+id/detayliEgitimText"
+        android:layout_width="156dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="126dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/egitimDurumu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detayliPp"/>
+
+    <TextView
+        android:id="@+id/detayliIsBilgileriText"
+        android:layout_width="156dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="126dp"
+        android:gravity="center"
+        android:text="@string/guncelIsBilgileri"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detayliEgitim" />
+
+    <TextView
+        android:id="@+id/detayliIetisimBilgileriText"
+        android:layout_width="156dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="126dp"
+        android:gravity="center"
+        android:text="@string/iletisimBilgileri"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detayliCompany" />
+
+    <TextView
+        android:id="@+id/detayliMail"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="105dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/profileMail"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detayliIetisimBilgileriText" />
+
+    <TextView
+        android:id="@+id/detayliPhone"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="105dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/profilePhone"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detayliMail" />
+
+    <TextView
+        android:id="@+id/detayliCountry"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="105dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/country"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/country"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detayliIsBilgileriText" />
+
+    <TextView
+        android:id="@+id/detayliEgitim"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="105dp"
+        android:hint="@string/egitimDurumu"
+        android:gravity="center"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/education"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detayliEgitimText" />
+
+    <TextView
+        android:id="@+id/detayliAd"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/registerNameString"
+        android:gravity="center"
+        android:background="@drawable/custom_input"
+        app:layout_constraintStart_toEndOf="@+id/detayliPp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detayliSoyad"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/registerSurnameString"
+        android:gravity="center"
+        android:background="@drawable/custom_input"
+        app:layout_constraintStart_toEndOf="@+id/detayliPp"
+        app:layout_constraintTop_toBottomOf="@+id/detayliAd" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
